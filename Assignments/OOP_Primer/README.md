@@ -167,7 +167,33 @@ int main() {
 ````
 
 #### Friends
+> **Friend Class** 
+> 
+> A friend class can access private and protected members of other classes in which it is declared as a friend. It is sometimes useful to allow a particular class to access private and protected members of other classes. For example, a LinkedList class may be allowed to access private members of Node.
 >
+> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=400>
+>
+> **Syntax:**
+````c++
+friend class class_name;    // declared in the base class
+````
+> **Friend Function**
+> 
+> Like a friend class, a friend function can be granted special access to private and protected members of a class in C++. They are the non-member functions that can access and manipulate the private and protected members of the class for they are declared as friends.
+>
+> A friend function can be:
+>
+> - A global function
+> - A member function of another class
+> 
+> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=400>
+> 
+> **Syntax:**
+````c++
+friend return_type function_name (arguments);    // for a global function
+            or
+friend return_type class_name::function_name (arguments);    // for a member function of another class
+````
 
 #### Inheritance
 > The capability of a class to derive properties and characteristics from another class is called Inheritance. Inheritance is one of the most important features of Object-Oriented Programming.
@@ -361,8 +387,6 @@ int main() {
   return 0;
 }
 ````
-
-
 
 #### Overloading
 > An overloaded declaration is a declaration that is declared with the same name as a previously declared declaration in the same scope, except that both declarations have different arguments and obviously different definition (implementation).
