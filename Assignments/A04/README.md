@@ -8,7 +8,7 @@ In this assignment we are creating our own OOP primer that provides definitions 
 
 |   #   | File     | Description                      |
 | :---: | -------- | -------------------------------- |
-|   1   | OOP.primer| Assignement to document all terminologies that we learn throughout the course |
+|   1   | README.md| Assignement to document all terminologies that we learn throughout the course |
 
 
 ### Instructions
