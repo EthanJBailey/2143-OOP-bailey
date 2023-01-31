@@ -6,9 +6,9 @@ In this assignment we are creating our own OOP primer that provides definitions 
 
 ### Files
 
-|   #   | File     | Description                      |
+|   #   | Folder   | Description                      |
 | :---: | -------- | -------------------------------- |
-|   1   | README.md| Assignment to document all terminologies that we learn throughout the course |
+|   1   |OOP_Primer| Assignment to document all terminologies that we learn throughout the course |
 
 
 ### Instructions
