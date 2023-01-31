@@ -9,7 +9,7 @@
 #### Abstraction
 > Abstraction means displaying only essential information and hiding the details.
 > For example: 
-> <img src="/images/Abstraction.jpg" width=250>
+> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=250>
 >> Types of Abstraction:
 > 1. Data abstraction – This type only shows the required information about the data and hides the unnecessary data.Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or implementation.
 > 2. Control Abstraction – This type only shows the required information about the implementation and hides unnecessary information.
