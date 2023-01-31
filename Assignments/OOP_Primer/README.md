@@ -92,12 +92,10 @@ class MyClass {       // The class
 };
 ````
 
-
 #### Class Variable
 > A class variable is an important part of object-oriented programming (OOP) that defines a specific attribute or property for a class and may be referred to as a member variable or static member variable.
 > 
 > Class variables − Class variables also known as static variables are declared with the static keyword in a class, but outside a method, constructor or a block. There would only be one copy of each class variable per class, regardless of how many objects are created from it.
-
 
 #### Composition
 > Composition in OOPS is a fundamental concept and describes a class that refers to one or more objects of the other class instance variables. It drives the design of the application and lets us know how the application should evolve as there are new features getting added or any requirements change. It is also one of the specialized but restricted forms of aggregation where two entities are dependent on each other. In Java, Object-Oriented Programming, it implements has-a relationship, which is achieved by using an instance variable referring to other objects.
@@ -435,6 +433,7 @@ Printing int: 5
 Printing float: 500.263
 Printing character: Hello C++
 ````
+
 #### Polymorphism
 > In simple words, we can define polymorphism as the ability of a message to be displayed in more than one form.
 > A person at the same time can have different characteristic. Like a man at the same time is a father, a husband, an employee. So the same person posses different behaviour in different situations. This is called **polymorphism**.
