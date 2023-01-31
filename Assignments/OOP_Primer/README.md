@@ -1,15 +1,15 @@
-## A05
+## A04 - OOP_Primer
 
-- Name: Francis Popperpot
+- Name: Ethan Bailey
 - Date: 08 Sep 2021
 - Class: 2143 OOP
 
 ## Definitions
 
 #### Abstraction
-> This is your definition of what a class is. Using images is A-ok. For example: 
->
-><img src="https://ds055uzetaobb.cloudfront.net/image_optimizer/722c82aff075a14313be7fa7463f7fedad151a0a.png" width=250>
+>  Abstraction means displaying only essential information and hiding the details. 
+> Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or implementation. For example: 
+><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fviktor-kukurba.medium.com%2Fobject-oriented-programming-in-javascript-1-abstraction-c47307c469d1&psig=AOvVaw3xRP--R68QTZ7X77sLdENG&ust=1675267721658000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCNiE996Y8vwCFQAAAAAdAAAAABAH" width=250>
 
 #### Attributes / Properties
 >
