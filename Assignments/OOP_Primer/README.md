@@ -7,13 +7,48 @@
 ## Definitions
 
 #### Abstraction
-> Abstraction means displaying only essential information and hiding the details.
-> For example: 
-> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=250>
->> Types of Abstraction:
+> Abstraction means displaying only essential information and hiding the details. For example: 
+>><img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=500>
+> Types of Abstraction:
 > 1. Data abstraction – This type only shows the required information about the data and hides the unnecessary data.Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or implementation.
 > 2. Control Abstraction – This type only shows the required information about the implementation and hides unnecessary information.
-
+>
+>  Example of Code below:
+>  
+> Source: https://www.geeksforgeeks.org/abstraction-in-cpp/
+ ````// C++ Program to Demonstrate the
+// working of Abstraction
+#include <iostream>
+using namespace std;
+ 
+class implementAbstraction {
+private:
+    int a, b;
+ 
+public:
+    // method to set values of
+    // private members
+    void set(int x, int y)
+    {
+        a = x;
+        b = y;
+    }
+ 
+    void display()
+    {
+        cout << "a = " << a << endl;
+        cout << "b = " << b << endl;
+    }
+};
+ 
+int main()
+{
+    implementAbstraction obj;
+    obj.set(10, 20);
+    obj.display();
+    return 0;
+}
+````
 
 #### Attributes / Properties
 >
