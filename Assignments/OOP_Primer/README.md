@@ -7,9 +7,11 @@
 ## Definitions
 
 #### Abstraction
-> Abstraction means displaying only essential information and hiding the details. For example: 
->
-><img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=400>
+> Abstraction means displaying only essential information and hiding the details.
+> 
+> Abstraction is selecting data from a larger pool to show only relevant details of the object to the user. It helps in reducing programming complexity and efforts. It is one of the most important concepts of OOPs. For example: 
+> 
+> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=400>
 >
 > **Types of Abstraction:**
 > 1. Data abstraction – This type only shows the required information about the data and hides the unnecessary data.Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or implementation.
@@ -113,10 +115,56 @@ class MyClass {       // The class
 > It is one of the special types of aggregation; restricted aggregation is called composition. This scenario is known as Composition, when an object contains other objects, and the contained object can’t exist without other objects.
 
 #### Constructor
+> A constructor is a special method of a class or structure in object-oriented programming that initializes a newly created object of that type. Whenever an object is created, the constructor is called automatically.
 >
+> A constructor is like an instance method that usually has the same name as the class, and can be used to set the values of the members of an object, either to default or to user-defined values. However, although it resembles it, a constructor is not a proper method since it doesn’t have a return type. Instead of performing a task by executing code, the constructor initializes the object, and it cannot be static, final, abstract, and synchronized.
+> 
+> Constructor in C++ is a special method that is invoked automatically at the time of object creation. It is used to initialize the data members of new objects generally. The constructor in C++ has the same name as the class or structure. Constructor is invoked at the time of object creation. It constructs the values i.e. provides data for the object which is why it is known as constructors. Constructors can be defined inside or outside the class declaration.
+> 
+> Constructor does not have a return value, hence they do not have a return type.
+>
+> The prototype of Constructors is as follows:
+````c++
+<class-name> (list-of-parameters);
+````
 
 #### Encapsulation
 >
+> The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve this, you must declare class variables/attributes as private (cannot be accessed from outside the class). If you want others to read or modify the value of a private member, you can provide public get and set methods.
+> 
+>**Why Encapsulation?**
+>
+> - It is considered good practice to declare your class attributes as private (as often as you can). Encapsulation ensures better control of your data, because you (or others) can change one part of the code without affecting other parts
+> - Increased security of data
+> 
+> **Example**
+````c++
+#include <iostream>
+using namespace std;
+
+class Employee {
+  private:
+    // Private attribute
+    int salary;
+
+  public:
+    // Setter
+    void setSalary(int s) {
+      salary = s;
+    }
+    // Getter
+    int getSalary() {
+      return salary;
+    }
+};
+
+int main() {
+  Employee myObj;
+  myObj.setSalary(50000);
+  cout << myObj.getSalary();
+  return 0;
+}
+````
 
 #### Friends
 >
