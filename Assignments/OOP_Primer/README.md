@@ -480,7 +480,8 @@ public class Counter {
     COUNT++;
   }
 }
-The COUNT variable will be shared by all objects of that class. When we create objects of our Counter class in main, and access the static variable.
+// The COUNT variable will be shared by all objects of that class. 
+// When we create objects of our Counter class in main, and access the static variable.
 
 public class MyClass {
   public static void main(String[] args) {
@@ -512,7 +513,7 @@ public class Counter {
     COUNT++;
   }
 }
-Static methods can also be called from instance of the class.
+// Static methods can also be called from instance of the class.
 
 public class MyClass {
   public static void main(String[] args) {
@@ -522,7 +523,8 @@ public class MyClass {
   }
 }
 // Outputs "2"
-The output is 2 because it gets incremented by static method increament(). Similar to static variables, static methods can also be accessed using instance variables.
+// The output is 2 because it gets incremented by static method increament(). 
+// Similar to static variables, static methods can also be accessed using instance variables.
 ````
 > **1) Static Blocks**
 > Static code blocks are used to initialise static variables. 
@@ -563,7 +565,7 @@ public class Outer {
     }
   }
 }
-In above example, class Inner can be directly accessed as a static member of class Outer.
+// In above example, class Inner can be directly accessed as a static member of class Outer.
 
 public class Main {
   public static void main(String[] args) {
