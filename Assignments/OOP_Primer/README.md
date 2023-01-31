@@ -72,14 +72,14 @@ b = 20
 > 
 > This picture further shows the difference between the two:
 >
-> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=350>
+> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Attributes_Properties.png" width=350>
 
 #### Class
 > In object-oriented programming, a class is a blueprint for creating objects (a particular data structure), providing initial values for state (member variables or attributes), and implementations of behavior (member functions or methods).
 > 
 > **For example:**
 >
-> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=350>
+> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Class.png" width=350>
 >
 > The user-defined objects are created using the class keyword. The class is a blueprint that defines a nature of a future object. An instance is a specific object created from a particular class. Classes are used to create and manage new objects and support inheritance—a key ingredient in object-oriented programming and a mechanism of reusing code
 > 
@@ -104,7 +104,7 @@ class MyClass {       // The class
 #### Composition
 > Composition in OOPS is a fundamental concept and describes a class that refers to one or more objects of the other class instance variables. It drives the design of the application and lets us know how the application should evolve as there are new features getting added or any requirements change. It is also one of the specialized but restricted forms of aggregation where two entities are dependent on each other. In Java, Object-Oriented Programming, it implements has-a relationship, which is achieved by using an instance variable referring to other objects.
 >
-> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=400>
+> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Composition.jpg" width=400>
 > 
 > An example of has-a relationship, i.e., Composition in OOPS.
 >
@@ -171,7 +171,7 @@ int main() {
 > 
 > A friend class can access private and protected members of other classes in which it is declared as a friend. It is sometimes useful to allow a particular class to access private and protected members of other classes. For example, a LinkedList class may be allowed to access private members of Node.
 >
-> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=400>
+> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/friend_class.png" width=400>
 >
 > **Syntax:**
 ````c++
@@ -186,7 +186,7 @@ friend class class_name;    // declared in the base class
 > - A global function
 > - A member function of another class
 > 
-> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=400>
+> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/friend_functioninC.png" width=400>
 > 
 > **Syntax:**
 ````c++
@@ -211,7 +211,7 @@ friend return_type class_name::function_name (arguments);    // for a member fun
 > 
 > **Example**: Dog, Cat, Cow can be Derived Class of Animal Base Class.
 >
-> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=350>
+> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/inheritance.png" width=350>
 > 
 > Check out this coded example of inheritance below:
  ````c++
@@ -310,13 +310,13 @@ int main () {
 > 
 > To put simply; a method is an action which an object is able to perform.
 > 
-> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=400>
+> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/method.png" width=400>
 
 
 #### Multiple Inheritance
 > Multiple Inheritance is a feature of C++ where a class can inherit from more than one class. i.e one subclass is inherited from more than one base class.
 > 
-> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=400>
+> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/multiple-inheritance.png" width=400>
 > 
 > **Example:**
 ````c++
@@ -447,7 +447,7 @@ Printing character: Hello C++
 > 
 > Example: Suppose we have to write a function to add some integers, some times there are 2 integers, some times there are 3 integers. We can write the Addition Method with the same name having different parameters, the concerned method will be called according to parameters.
 >
-> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=400>
+> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/polymorphism.png" width=400>
 
 #### Public / Private / Protected
 > These are access modifiers and help us implement Encapsulation (or information hiding). They tell the compiler which other classes should have access to the field or method being defined.
@@ -463,7 +463,7 @@ Printing character: Hello C++
 >
 > This assumes these keywords are used as part of a field or method declaration within a class definition.
 >
-> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=400>
+> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Access_Modifier.png" width=400>
 
 #### Static
 > When you declare a variable or a method as static, it belongs to the class, rather than a specific instance. This means that only one instance of a static member exists, even if you create multiple objects of the class, or if you don’t create any. It will be shared by all objects.
