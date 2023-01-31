@@ -99,7 +99,6 @@ class MyClass {       // The class
 > Class variables − Class variables also known as static variables are declared with the static keyword in a class, but outside a method, constructor or a block. There would only be one copy of each class variable per class, regardless of how many objects are created from it.
 
 
-
 #### Composition
 > Composition in OOPS is a fundamental concept and describes a class that refers to one or more objects of the other class instance variables. It drives the design of the application and lets us know how the application should evolve as there are new features getting added or any requirements change. It is also one of the specialized but restricted forms of aggregation where two entities are dependent on each other. In Java, Object-Oriented Programming, it implements has-a relationship, which is achieved by using an instance variable referring to other objects.
 >
@@ -233,7 +232,12 @@ int main () {
 ```
 
 #### Method
->
+> A method is the equivalent of a function in object-oriented programming. A noun is to a verb what a variable is to a method — the methods are the actions that perform operations on a variable. A method accepts parameters as arguments, manipulates these, and then produces an output when the method is called on an object. Methods are similar to functions, but methods are also classified according to their purpose in the class design. In classes, variables are called attributes, so methods often operate on attributes.
+> 
+> To put simply; a method is an action which an object is able to perform.
+> 
+> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=400>
+
 
 #### Multiple Inheritance
 > Multiple Inheritance is a feature of C++ where a class can inherit from more than one class. i.e one subclass is inherited from more than one base class.
@@ -282,7 +286,35 @@ This is a 4 wheeler Vehicle
 ````
 
 #### Object
->
+> Objects are instances of a class created with specific data. Class templates are used as a blueprint to create individual objects. These represent specific examples of the abstract class. Each object can have unique values to the properties defined in the class.
+> 
+> **Example:**
+> 
+> In C++, an object is created from a class. We have already created the class named MyClass, so now we can use this to create objects.
+> 
+>To access the class attributes (myNum and myString), use the dot syntax (.) on the object:
+````c++
+class MyClass {       // The class
+  public:             // Access specifier
+    int myNum;        // Attribute (int variable)
+    string myString;  // Attribute (string variable)
+};
+
+int main() {
+  MyClass myObj;  // Create an object of MyClass
+
+  // Access attributes and set values
+  myObj.myNum = 15; 
+  myObj.myString = "Some text";
+
+  // Print attribute values
+  cout << myObj.myNum << "\n";
+  cout << myObj.myString;
+  return 0;
+}
+````
+
+
 
 #### Overloading
 > An overloaded declaration is a declaration that is declared with the same name as a previously declared declaration in the same scope, except that both declarations have different arguments and obviously different definition (implementation).
