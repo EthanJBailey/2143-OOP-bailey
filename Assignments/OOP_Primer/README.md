@@ -450,9 +450,192 @@ Printing character: Hello C++
 > <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=400>
 
 #### Public / Private / Protected
+> These are access modifiers and help us implement Encapsulation (or information hiding). They tell the compiler which other classes should have access to the field or method being defined.
+> 
+> In object-oriented languages, access modifiers (or access specifiers) are keywords that control the accessibility of classes, methods, and other members. Access modifiers are a type of programming language syntax that makes it easier to encapsulate components.
 >
+> There are just three access modifiers in C++. The number of them is increased to six in C#, whereas Java has four access modifiers but only three keywords for this purpose. The package-private modifier is used by default in Java when there is no keyword preceding it.
+>
+> - private - Only the current class will have access to the field or method.
+> - protected - Only the current class and subclasses (and sometimes also same-package classes) of this class will have access to the field or method.
+> - public - Any class can refer to the field or call the method.
+> - default (for java) - A default modifier's access level is limited to the package. It's not possible to get to it from outside the package. If you don't indicate an access level, the default will be used. 
+>
+> This assumes these keywords are used as part of a field or method declaration within a class definition.
+>
+> <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/OOP_Primer/images/Abstraction.jpg" width=400>
 
 #### Static
+> When you declare a variable or a method as static, it belongs to the class, rather than a specific instance. This means that only one instance of a static member exists, even if you create multiple objects of the class, or if you don’t create any. It will be shared by all objects.
 >
+> The static keyword can be used with variables, methods, code blocks and nested classes.
+> 
+> **1) Static Variables**
+> 
+> **Example:**
+``` java
+public class Counter {
+  public static int COUNT = 0;
+  Counter() {
+    COUNT++;
+  }
+}
+The COUNT variable will be shared by all objects of that class. When we create objects of our Counter class in main, and access the static variable.
 
+public class MyClass {
+  public static void main(String[] args) {
+    Counter c1 = new Counter();
+    Counter c2 = new Counter();
+    System.out.println(Counter.COUNT);
+  }
+}
+// Outputs "2"
+````
+> The output is 2, because the COUNT variable is static and gets incremented by one each time a new object of the Counter class is created. You can also access the static variable using any object of that class, such as c1.COUNT.
+>
+> **2) Static Methods**
+>
+> A static method belongs to the class rather than instances. Thus, it can be called without creating instance of class. It is used for altering static contents of the class. There are some restrictions of static methods :
+>
+> - Static method can not use non-static members (variables or functions) of the class.
+> - Static method can not use this or super keywords.
+>
+> **Example:**
+````java
+public class Counter {
+  public static int COUNT = 0;
+  Counter() {
+    COUNT++;
+  }
+
+  public static void increment(){
+    COUNT++;
+  }
+}
+Static methods can also be called from instance of the class.
+
+public class MyClass {
+  public static void main(String[] args) {
+    Counter.increment();
+    Counter.increment();
+    System.out.println(Counter.COUNT);
+  }
+}
+// Outputs "2"
+The output is 2 because it gets incremented by static method increament(). Similar to static variables, static methods can also be accessed using instance variables.
+````
+> **1) Static Blocks**
+> Static code blocks are used to initialise static variables. 
+> 
+> These blocks are executed immediately after declaration of static variables.
+>
+> **Example:**
+```` java
+public class Saturn {
+  public static final int MOON_COUNT;
+
+  static {
+    MOON_COUNT = 62;
+  }
+}
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(Saturn.MOON_COUNT);
+  }
+}
+// Outputs "62"
+````
+> The output is 62, because variable MOON_COUNT is assigned that value in the static block.
+>
+> **Static Nested Classes**
+> 
+> A class can have static nested class which can be accessed by using outer class name.
+>
+> **Example:**
+```` java
+public class Outer {
+
+  public Outer() {
+  }
+
+  public static class Inner {
+    public Inner() {
+    }
+  }
+}
+In above example, class Inner can be directly accessed as a static member of class Outer.
+
+public class Main {
+  public static void main(String[] args) {
+    Outer.Inner inner = new Outer.Inner();
+  }
+}
+````
 #### Virtual
+> A virtual function or virtual method in an OOP language is a function or method used to override the behavior of the function in an inherited class with the same signature to achieve the polymorphism.
+> 
+> When the programmers switch the technology from C++ to Java, they think about where is the virtual function in Java. In C++, the virtual function is defined using the virtual keyword, but in Java, it is achieved using different techniques. See Virtual function in C++.
+> 
+> Java is an object-oriented programming language; it supports OOPs features such as polymorphism, abstraction, inheritance, etc. These concepts are based on objects, classes, and member functions.
+> 
+> By default, all the instance methods in Java are considered as the Virtual function except final, static, and private methods as these methods can be used to achieve polymorphism.
+> 
+> A virtual function in C++ is a base class member function that you can redefine in a derived class to achieve polymorphism. You can declare the function in the base class using the virtual keyword. Once you declare the function in the base class, you can use a pointer or reference to call the virtual class and execute its virtual version in the derived class. Thus, it asks the compiler to determine the object’s type during run-time and create a function bind (late binding or dynamic linkage).
+> 
+> A virtual function in C++ helps ensure you call the correct function via a reference or pointer. The C++ programming language allows you only to use a single pointer to refer to all the derived class objects. Since the pointer refers to all the derived objects, calling it will consistently execute the function in the base class. You can overcome this challenge with a virtual function in C++ as it helps execute the virtual version of the derived class, which is done at the run-time.
+>
+> **There are a few rules you need to follow to create a virtual function in C++. These rules are:**
+>
+> - The functions cannot be static
+> - You derive them using the “virtual” keyword
+> - Virtual functions in C++ needs to be a member of some other class (base class)
+> - They can be a friend function of another class
+> - The prototype of these functions should be the same for both the base and derived class
+> - Virtual functions are accessible using object pointers
+> - Redefining the virtual function in the derived class is optional, but it needs to be defined in the base class
+> - The function call resolving is done at run-time
+> - You can create a virtual destructor but not a constructor
+````c++
+#include <iostream>
+using namespace std;
+
+class Base{
+  public:
+  virtual void Output(){
+  cout << "Output Base class" << endl;
+  }
+  
+  void Display(){
+  cout << "Display Base class" << endl;
+  }
+};
+
+class Derived : public Base{
+  public:
+  void Output(){
+  cout << "Output Derived class" << endl;
+  }
+
+ void Display(){ 
+ cout << "Display Derived class" << endl;
+ }
+};
+
+int main(){
+Base* bpointr;
+Derived dpointr;
+bpointr = &dpointr;
+
+// virtual function binding
+bpointr->Output();
+
+// Non-virtual function binding
+bpointr->Display();
+
+}
+````
+> **Output:**
+````
+Output Derived class
+Display Base class
+````
