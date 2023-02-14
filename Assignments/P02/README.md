@@ -1,11 +1,17 @@
 ## Program 2 - MyVector Class 2
 #### Due: 02-16-2023 (Thursday @ 2:00 p.m.)
 
-## Overview
 
-Getting help from [Lecture 04](../../Lectures/04-Day_05-06/main.cpp)  create a linked list based `Vector` class that will include the functionality listed below. You will achieve this by writing additional methods to add values, remove values, and maintain sorted values if needed. This class also needs the ability to be initialized with different data sources (files, other vectors, and arrays).
+### Files
 
-I'll give some basic linked list code to help, 
+|   #   | File            | Description                                        |
+| :---: | --------------- | -------------------------------------------------- |
+|   1   | main.cpp        | Main driver of the program that launches everything|
+|   2   | output.txt      | Output file that contains values from list         |
+
+### Instructions
+
+Create a linked list based `Vector` class that will include the functionality listed below. You will achieve this by writing additional methods to add values, remove values, and maintain sorted values if needed. This class also needs the ability to be initialized with different data sources (files, other vectors, and arrays).
 
 ## Requirements
 
