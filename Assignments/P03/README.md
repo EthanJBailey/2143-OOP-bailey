@@ -16,11 +16,11 @@ Graphviz is used for "graph visualization" and provides a simple way to visualiz
 
 ## Requirements
 
-###Your Graphviz class should be able to:
+##Your Graphviz class should be able to:
 - Add nodes
 - Add edges between nodes
 
-###The styles you need to implement are:
+##The styles you need to implement are:
 - Colored nodes
 - Colored edges
 - Edge direction includes: None, One, Both
