@@ -7,7 +7,7 @@
 |   #   | File            | Description                                        |
 | :---: | --------------- | -------------------------------------------------- |
 |   1   | main.cpp        | Main driver of the program that launches everything|
-|   2   | output.txt      | Output file that contains values from list         |
+|   2   | output.txt      | Output file that contains various graphs        |
 
 ### Instructions
 
