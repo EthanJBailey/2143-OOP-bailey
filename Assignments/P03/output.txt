@@ -1,0 +1,48 @@
+Ethan Bailey
+03/04/2023
+Spring 2143
+
+digraph LL{
+	label="LinkedList";
+	bgcolor="gold:skyblue";
+	rankdir= LR;
+	node [color="black", shape="circle"];
+	N1 [color="blue", shape="diamond"];
+	N2 [color="purple", shape="box3d"];
+	N3 [color="red", shape="box"];
+	null [color="blue", shape="plain", width="1.2"];
+	N1->N2 [arrowhead="vee", color="navy", dir="one"];
+	N2->N3 [arrowhead="icurve", color="purple", dir="one"];
+	N3->N4 [arrowhead="diamond", color="red", dir="none"];
+	N4->null [color="black"];
+}
+digraph DLL{
+	label="Doubly-Linked List";
+	bgcolor="gold:red";
+	rankdir= LR;
+	node [arrowhead="invdot", arrowtail="dot", color="black", shape="record"];
+	edge [arrowhead="vee", arrowtail="dot", color="black", dir="both", tailclip="false"];
+	Nptr [color="silver", label="null", shape="star"];
+	N0 [label = "{ <prev> 23 | <data> 1 | <ref> 09}", color="grey"];
+	N1 [label = "{ <prev> 12 | <data> 5 | <ref> Me}", color="green"];
+	N2 [label = "{ <prev> 49 | <data> 7 | <ref> You}", color="purple"];
+	Nptr:e -> N0:prev:N2 [arrowhead="dot", color="black"];
+	N0:next:N2 -> N1:data:n [color="purple"];
+	N1:next:N2 -> N2:data:n [color="black", dir="both", width="1.0"];
+	N2:next:N2 -> N3:N3 [color="pink", headclip="true"];
+	N2:prev:N2 -> N1:data:s [color="blue", label="She Calls Me"];
+	N1:prev:N2 -> N0:data:s [color="skyblue", label="Crazy"];
+}
+digraph BST{
+	label="Binary Search Tree";
+	bgcolor="skyblue:pink";
+	rankdir= TB;
+	node [arrowhead="dot", color="black", shape="record"];
+	edge [arrowhead="vee", arrowtail="dot", color="black", dir="both", tailclip="false"];
+	11 [label = "{ <prev> 81 | <data> 0 | <ref> 90}", color="purple"];
+	23 [label = "{ <prev> 74 | <data> 0 | <ref> 10}", color="red"];
+	7 [label = "{ <prev> 45 | <data> 23 | <ref> 12}", color="blue"];
+	11:s -> { 7,23 } [color="maroon"];
+	7:next -> { 3,9 } [arrowhead="icurve", color="purple"];
+	23:prev -> { 13,51 } [arrowhead="diamond", color="gold"];
+}
