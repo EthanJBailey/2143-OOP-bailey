@@ -7,7 +7,7 @@
 |   05  |[P01](https://github.com/EthanJBailey/2143-OOP-bailey/tree/main/Assignments/P01)| Program to create a custom Vector Class that holds a linked list.|
 |   06  |[P02](https://github.com/EthanJBailey/2143-OOP-bailey/tree/main/Assignments/P02)| Program to create a list-based Vector Class with overloaded operators.|
 |   07  |[P03](https://github.com/EthanJBailey/2143-OOP-bailey/tree/main/Assignments/P03)| Program to create a GraphizViz Class to output "dot" syntax.|
-|   07  |[P04](https://github.com/EthanJBailey/2143-OOP-bailey/tree/main/Assignments/P04)| Program creates a Die and many Dice that be rolled in Python.|
+|   08  |[P04](https://github.com/EthanJBailey/2143-OOP-bailey/tree/main/Assignments/P04)| Program creates a Die and many Dice that be rolled in Python.|
 
 
 
