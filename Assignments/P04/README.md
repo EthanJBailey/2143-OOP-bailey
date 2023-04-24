@@ -14,7 +14,7 @@ value for a set of dice.
 |   #   | File            | Description                                        |
 | :---: | --------------- | -------------------------------------------------- |
 |   1   | dice.py         | Main driver of my project that launches program.   |
-|   1   | main.py         | Test driver of my project that tests the implemenation.   |
+|   2   | main.py         | Test driver of my project that tests the implemenation.   |
 
 ### Instructions
 
