@@ -3,6 +3,7 @@
 - Name: Ethan Bailey
 - Date: 31 January 2023
 - Class: 2143 OOP
+- This primer provides definitions and examples of all of the main OOP concepts and more.
 
 ## Definitions
 
