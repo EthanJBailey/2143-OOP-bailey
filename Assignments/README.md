@@ -8,7 +8,7 @@
 |   06  |[P02](https://github.com/EthanJBailey/2143-OOP-bailey/tree/main/Assignments/P02)| Program to create a list-based Vector Class with overloaded operators.|
 |   07  |[P03](https://github.com/EthanJBailey/2143-OOP-bailey/tree/main/Assignments/P03)| Program to create a GraphizViz Class to output "dot" syntax.|
 |   08  |[P04](https://github.com/EthanJBailey/2143-OOP-bailey/tree/main/Assignments/P04)| Program creates a Die and many Dice that be rolled in Python.|
-|   09  |[A05](https://github.com/EthanJBailey/2143-OOP-bailey/tree/main/Assignments/A05)| Assignment to creates a UML Diagram for a D&D Game.|
+|   09  |[A05](https://github.com/EthanJBailey/2143-OOP-bailey/tree/main/Assignments/A05)| Assignment to create a UML Diagram for a D&D Game.|
 
 
 
