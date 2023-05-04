@@ -13,7 +13,7 @@ and relationships were formed.
 |   #   | File            | Description                                        |
 | :---: | --------------- | -------------------------------------------------- |
 |   1   | D&D Game UML | Final version of the UML diagram created.   |
-|   1   | images       | The folder where all diagrams are stored.   |
+|   2   | images       | The folder where all diagrams are stored.   |
 
 ## Initial Classes
 - Character
