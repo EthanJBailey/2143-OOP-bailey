@@ -6,7 +6,7 @@ This assignmet covers the creation of a Unified Modeling Language(UML) diagram f
 The first step of the process was identifying all the main components of the game which became classes that would be refined.
 Then, based on the usage, a set of attributes and methods were created for each classes.
 Finally, the commonailities between classes were noted and classes with repeating elements were split up into its own class
-and relationships were formed.
+and relationships were formed. ([Skip to Final Diagram](https://github.com/EthanJBailey/2143-OOP-bailey/tree/main/Assignments/A05#final-diagram))
 
 ### Files
 
@@ -63,7 +63,5 @@ A Game has a Map (in this D&D, only one map per game). It also has one or more D
 Finally, after making all the changes resulted in this final UML diagram:
 
 <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/A05/images/Final%20UML%20Diagram.jpg" width="1000">
-
-
 
 
