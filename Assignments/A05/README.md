@@ -60,7 +60,8 @@ A Game has a Map (in this D&D, only one map per game). It also has one or more D
 <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/A05/images/Game.png" width="500">
 
 ## Final diagram:
-Finally, making all the changes resulted in this final UML diagram:
+Finally, after making all the changes resulted in this final UML diagram:
+
 <img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/A05/images/Final%20UML%20Diagram.jpg" width="1000">
 
 
