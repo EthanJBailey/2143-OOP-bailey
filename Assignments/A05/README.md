@@ -28,5 +28,5 @@ and relationships were formed.
 - Map
 
 ## Initial diagrams:
-<img src="images/png" width="200">
+<img src="https://github.com/EthanJBailey/2143-OOP-bailey/blob/main/Assignments/A05/images/Initial%20UML%20Diagram.jpg" width="500">
 
